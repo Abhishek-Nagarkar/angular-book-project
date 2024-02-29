@@ -1,0 +1,21 @@
+<h3>Find a book!</h3>
+
+<div>
+    <table>
+        <tr>
+            <th>Book Id</th>
+            <th>Book Title</th>
+            <th>Book Author</th>
+            <th>Book Price</th>
+            <th>Book Pages</th>
+        </tr>
+        <tr class="tr-book">
+            <td><input type="number" [(ngModel)]="book.bookId"></td>
+            <td><input type="number" [(ngModel)]="book.bookTitle"></td>
+            <td><input type="number" [(ngModel)]="book.bookAuthor"></td>
+            <td><input type="number" [(ngModel)]="book.bookPrice"></td>
+            <td><input type="number" [(ngModel)]="book.bookPages"></td>
+        </tr>
+        <tr><td><button (click)="update()">Find</button></td></tr>
+    </table>
+</div>

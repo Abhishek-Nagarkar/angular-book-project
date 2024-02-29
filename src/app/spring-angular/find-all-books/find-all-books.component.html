@@ -1,0 +1,14 @@
+<p>find-all-books works!</p>
+<table>
+    <tr *ngFor="let book of bookList">
+        <td>{{book.bookId}}</td>
+        <td>{{book.bookTitle}}</td>
+        <td>{{book.bookAuthor}}</td>
+        <td>{{book.bookPrice}}</td>
+        <td>{{book.bookPages}}</td>
+    </tr>
+    
+</table>
+
+<br>
+<button (click)="findAll()">Find All</button>
